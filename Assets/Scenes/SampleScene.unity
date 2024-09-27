@@ -263,8 +263,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   oceanFloorRenderer: {fileID: 2024406628}
   shipTransform: {fileID: 323975177}
-  radius: 0.55
-  rolloff: 8
+  radius: 1.5
+  rolloff: 20
 --- !u!114 &323975179
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -564,7 +564,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!108 &1075000275
 Light:
   m_ObjectHideFlags: 0
