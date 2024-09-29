@@ -47,13 +47,13 @@ public class OctopusAnimatorController : MonoBehaviour
     void Update()
     {
         // Example: Switch to ragdoll mode when the "R" key is pressed
-        if (Input.GetKeyDown(KeyCode.R))
+        if (Input.GetKeyDown(KeyCode.Z))
         {
             SetRagdollMode(true); // Enable ragdoll
         }
         
         // Switch back to animation mode when the "A" key is pressed
-        if (Input.GetKeyDown(KeyCode.A))
+        if (Input.GetKeyDown(KeyCode.X))
         {
             SetRagdollMode(false); // Enable animation
         }

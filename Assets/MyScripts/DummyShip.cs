@@ -15,7 +15,7 @@ public class DummyShipController : MonoBehaviour
         float moveSide = Input.GetAxis("Horizontal") * moveSpeed * Time.deltaTime;
 
         // Apply movement
-        transform.Translate(moveSide, 0, moveForward);
+        transform.Translate(moveSide, moveForward, 0);
 
         // Optional: Rotate with Q and E keys
         if (Input.GetKey(KeyCode.Q))
