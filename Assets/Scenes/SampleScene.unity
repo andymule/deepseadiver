@@ -331,84 +331,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1760703bbd54c04488a8d10600262ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1001 &167694551
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: d0a26ac7e2da84eb9a8bd2bad9c45a89,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: d0a26ac7e2da84eb9a8bd2bad9c45a89,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: d0a26ac7e2da84eb9a8bd2bad9c45a89,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: d0a26ac7e2da84eb9a8bd2bad9c45a89,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: d0a26ac7e2da84eb9a8bd2bad9c45a89,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.00000003774895
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: d0a26ac7e2da84eb9a8bd2bad9c45a89,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: d0a26ac7e2da84eb9a8bd2bad9c45a89,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: d0a26ac7e2da84eb9a8bd2bad9c45a89,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: d0a26ac7e2da84eb9a8bd2bad9c45a89,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: d0a26ac7e2da84eb9a8bd2bad9c45a89,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -7511558181221131132, guid: d0a26ac7e2da84eb9a8bd2bad9c45a89,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: cf1be67001d284310a21ae103e75e59d, type: 2}
-    - target: {fileID: 919132149155446097, guid: d0a26ac7e2da84eb9a8bd2bad9c45a89,
-        type: 3}
-      propertyPath: m_Name
-      value: Moonlight_Octopus_0927215105
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: d0a26ac7e2da84eb9a8bd2bad9c45a89,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: d0a26ac7e2da84eb9a8bd2bad9c45a89, type: 3}
 --- !u!4 &237852452 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2512387470890420967, guid: 48cb3fb68c91eb94999fd99957eb0cae,
@@ -510,7 +432,7 @@ GameObject:
   - component: {fileID: 323975178}
   m_Layer: 0
   m_Name: LilShip
-  m_TagString: Untagged
+  m_TagString: Ship
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -598,7 +520,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0.5, y: -0.5, z: 0.5, w: 0.5}
   m_LocalPosition: {x: 0.023841321, y: 0.25, z: 0.2898085}
-  m_LocalScale: {x: 0.02, y: 0.02, z: 0.02}
+  m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 45058932}
@@ -617,7 +539,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 107105a5cfe294237b86a3f67ba79755, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  oceanFloorRenderer: {fileID: 2024406628}
+  oceanFloorRenderer: {fileID: 0}
   shipTransform: {fileID: 323975177}
   radius: 1.5
   rolloff: 20
@@ -717,6 +639,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 2512387470528047738, guid: 48cb3fb68c91eb94999fd99957eb0cae,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1281826890}
     - targetCorrespondingSourceObject: {fileID: 2512387470890420967, guid: 48cb3fb68c91eb94999fd99957eb0cae,
         type: 3}
       insertIndex: 0
@@ -775,6 +701,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 335029463}
+  dropHeight: 0.15
+  swimSpeed: 0.01
+  detectionRadius: 0.24
 --- !u!1 &368401516 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -7139312398699754441, guid: 17f7122f76930400ebf140456feb1b1b,
@@ -854,79 +783,6 @@ CharacterJoint:
   m_EnablePreprocessing: 1
   m_MassScale: 1
   m_ConnectedMassScale: 1
---- !u!1001 &435220608
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: fdc46f7651f9148318118bd38fc9215e,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: fdc46f7651f9148318118bd38fc9215e,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: fdc46f7651f9148318118bd38fc9215e,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: fdc46f7651f9148318118bd38fc9215e,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: fdc46f7651f9148318118bd38fc9215e,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: fdc46f7651f9148318118bd38fc9215e,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: fdc46f7651f9148318118bd38fc9215e,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: fdc46f7651f9148318118bd38fc9215e,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: fdc46f7651f9148318118bd38fc9215e,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: fdc46f7651f9148318118bd38fc9215e,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: fdc46f7651f9148318118bd38fc9215e,
-        type: 3}
-      propertyPath: m_Name
-      value: octo2
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: fdc46f7651f9148318118bd38fc9215e,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: fdc46f7651f9148318118bd38fc9215e, type: 3}
 --- !u!1 &436358032
 GameObject:
   m_ObjectHideFlags: 0
@@ -1404,6 +1260,12 @@ CharacterJoint:
   m_EnablePreprocessing: 1
   m_MassScale: 1
   m_ConnectedMassScale: 1
+--- !u!4 &1003828056 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2512387470528047738, guid: 48cb3fb68c91eb94999fd99957eb0cae,
+    type: 3}
+  m_PrefabInstance: {fileID: 331264285}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1069943192 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -5189538203939632783, guid: 17f7122f76930400ebf140456feb1b1b,
@@ -1641,6 +1503,987 @@ CharacterJoint:
   m_EnablePreprocessing: 1
   m_MassScale: 1
   m_ConnectedMassScale: 1
+--- !u!1 &1281826888
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1281826890}
+  - component: {fileID: 1281826889}
+  m_Layer: 0
+  m_Name: DataVisualizer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1281826889
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1281826888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6a84284a59841c7ba544c041b20edc7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dataPoints:
+  - timestamp: 2024-07-14 21:59:20.043000+00:00
+    Salinity_psu: 34.687
+    SoundVelocity_meters_per_second: 1532.21
+    Temperature_celsius: 1.81
+    VehicleAltitude_meters: 2.92
+    VehicleDepth_meters: 4440.66
+    VehicleHeading_degrees: 213.333
+    x_meters: 0
+    y_meters: 0
+    z_meters: 0
+  - timestamp: 2024-07-14 21:59:30.024000+00:00
+    Salinity_psu: 34.687
+    SoundVelocity_meters_per_second: 1532.23
+    Temperature_celsius: 1.81
+    VehicleAltitude_meters: 2.15
+    VehicleDepth_meters: 4441.6
+    VehicleHeading_degrees: 217.529
+    x_meters: 0.86331016
+    y_meters: -0.94
+    z_meters: -0.44453168
+  - timestamp: 2024-07-14 21:59:38.088000+00:00
+    Salinity_psu: 34.687
+    SoundVelocity_meters_per_second: 1532.24
+    Temperature_celsius: 1.81
+    VehicleAltitude_meters: 1.4
+    VehicleDepth_meters: 4442.44
+    VehicleHeading_degrees: 223.951
+    x_meters: 1.402879
+    y_meters: -1.78
+    z_meters: -0.5556646
+  - timestamp: 2024-07-14 21:59:40.043000+00:00
+    Salinity_psu: 34.687
+    SoundVelocity_meters_per_second: 1532.24
+    Temperature_celsius: 1.81
+    VehicleAltitude_meters: 1.33
+    VehicleDepth_meters: 4442.52
+    VehicleHeading_degrees: 227.032
+    x_meters: 1.402879
+    y_meters: -1.86
+    z_meters: -0.6667975
+  - timestamp: 2024-07-14 21:59:48.629000+00:00
+    Salinity_psu: 34.687
+    SoundVelocity_meters_per_second: 1532.24
+    Temperature_celsius: 1.81
+    VehicleAltitude_meters: 1.26
+    VehicleDepth_meters: 4442.66
+    VehicleHeading_degrees: 235.673
+    x_meters: 1.5107929
+    y_meters: -2
+    z_meters: -1.0001963
+  - timestamp: 2024-07-14 21:59:50.026000+00:00
+    Salinity_psu: 34.687
+    SoundVelocity_meters_per_second: 1532.25
+    Temperature_celsius: 1.81
+    VehicleAltitude_meters: 1.24
+    VehicleDepth_meters: 4442.68
+    VehicleHeading_degrees: 235.876
+    x_meters: 1.5107929
+    y_meters: -2.02
+    z_meters: -1.0001963
+  - timestamp: 2024-07-14 22:00:00.040000+00:00
+    Salinity_psu: 34.686
+    SoundVelocity_meters_per_second: 1532.25
+    Temperature_celsius: 1.82
+    VehicleAltitude_meters: 1.11
+    VehicleDepth_meters: 4442.73
+    VehicleHeading_degrees: 237.497
+    x_meters: 1.0791377
+    y_meters: -2.07
+    z_meters: -1.2224622
+  - timestamp: 2024-07-14 22:00:01.197000+00:00
+    Salinity_psu: 34.686
+    SoundVelocity_meters_per_second: 1532.25
+    Temperature_celsius: 1.81
+    VehicleAltitude_meters: 1.09
+    VehicleDepth_meters: 4442.75
+    VehicleHeading_degrees: 237.645
+    x_meters: 0.97122395
+    y_meters: -2.09
+    z_meters: -1.2224622
+  - timestamp: 2024-07-14 22:00:10.038000+00:00
+    Salinity_psu: 34.687
+    SoundVelocity_meters_per_second: 1532.26
+    Temperature_celsius: 1.81
+    VehicleAltitude_meters: 0.88
+    VehicleDepth_meters: 4442.91
+    VehicleHeading_degrees: 237.491
+    x_meters: 0.64748263
+    y_meters: -2.25
+    z_meters: -1.444728
+  - timestamp: 2024-07-14 22:00:16.017000+00:00
+    Salinity_psu: 34.686
+    SoundVelocity_meters_per_second: 1532.26
+    Temperature_celsius: 1.81
+    VehicleAltitude_meters: 0.72
+    VehicleDepth_meters: 4443.03
+    VehicleHeading_degrees: 236.217
+    x_meters: 0.43165508
+    y_meters: -2.37
+    z_meters: -1.6669939
+  - timestamp: 2024-07-14 22:00:20.042000+00:00
+    Salinity_psu: 34.686
+    SoundVelocity_meters_per_second: 1532.26
+    Temperature_celsius: 1.81
+    VehicleAltitude_meters: 0.66
+    VehicleDepth_meters: 4443.09
+    VehicleHeading_degrees: 236.294
+    x_meters: 0.32374132
+    y_meters: -2.43
+    z_meters: -1.5558609
+  - timestamp: 2024-07-14 22:00:30.037000+00:00
+    Salinity_psu: 34.687
+    SoundVelocity_meters_per_second: 1532.25
+    Temperature_celsius: 1.81
+    VehicleAltitude_meters: 0.68
+    VehicleDepth_meters: 4443.09
+    VehicleHeading_degrees: 239.502
+    x_meters: 0.43165508
+    y_meters: -2.43
+    z_meters: -1.7781267
+  - timestamp: 2024-07-14 22:00:30.266000+00:00
+    Salinity_psu: 34.687
+    SoundVelocity_meters_per_second: 1532.25
+    Temperature_celsius: 1.81
+    VehicleAltitude_meters: 0.66
+    VehicleDepth_meters: 4443.1
+    VehicleHeading_degrees: 239.892
+    x_meters: 0.43165508
+    y_meters: -2.44
+    z_meters: -1.8892597
+  - timestamp: 2024-07-14 22:00:40.038000+00:00
+    Salinity_psu: 34.687
+    SoundVelocity_meters_per_second: 1532.25
+    Temperature_celsius: 1.81
+    VehicleAltitude_meters: 0.64
+    VehicleDepth_meters: 4443.14
+    VehicleHeading_degrees: 242.803
+    x_meters: 0.43165508
+    y_meters: -2.48
+    z_meters: -1.8892597
+  - timestamp: 2024-07-14 22:00:46.723000+00:00
+    Salinity_psu: 34.686
+    SoundVelocity_meters_per_second: 1532.25
+    Temperature_celsius: 1.81
+    VehicleAltitude_meters: 0.68
+    VehicleDepth_meters: 4443.11
+    VehicleHeading_degrees: 250.071
+    x_meters: 0.32374132
+    y_meters: -2.45
+    z_meters: -2.1115255
+  - timestamp: 2024-07-14 22:00:50.048000+00:00
+    Salinity_psu: 34.687
+    SoundVelocity_meters_per_second: 1532.25
+    Temperature_celsius: 1.81
+    VehicleAltitude_meters: 0.68
+    VehicleDepth_meters: 4443.11
+    VehicleHeading_degrees: 254.729
+    x_meters: 0.32374132
+    y_meters: -2.45
+    z_meters: -2.2226584
+  - timestamp: 2024-07-14 22:00:54.089000+00:00
+    Salinity_psu: 34.686
+    SoundVelocity_meters_per_second: 1532.25
+    Temperature_celsius: 1.81
+    VehicleAltitude_meters: 0.68
+    VehicleDepth_meters: 4443.11
+    VehicleHeading_degrees: 262.079
+    x_meters: 0.32374132
+    y_meters: -2.45
+    z_meters: -2.5560572
+  - timestamp: 2024-07-14 22:01:00.100000+00:00
+    Salinity_psu: 34.686
+    SoundVelocity_meters_per_second: 1532.25
+    Temperature_celsius: 1.81
+    VehicleAltitude_meters: 0.71
+    VehicleDepth_meters: 4443.09
+    VehicleHeading_degrees: 273.422
+    x_meters: 0.43165508
+    y_meters: -2.43
+    z_meters: -2.889456
+  - timestamp: 2024-07-14 22:01:06.477000+00:00
+    Salinity_psu: 34.687
+    SoundVelocity_meters_per_second: 1532.25
+    Temperature_celsius: 1.81
+    VehicleAltitude_meters: 0.71
+    VehicleDepth_meters: 4443.06
+    VehicleHeading_degrees: 277.971
+    x_meters: 0.32374132
+    y_meters: -2.4
+    z_meters: -3.1117218
+  - timestamp: 2024-07-14 22:01:10.118000+00:00
+    Salinity_psu: 34.686
+    SoundVelocity_meters_per_second: 1532.25
+    Temperature_celsius: 1.81
+    VehicleAltitude_meters: 0.7
+    VehicleDepth_meters: 4443.06
+    VehicleHeading_degrees: 279.338
+    x_meters: 0.32374132
+    y_meters: -2.4
+    z_meters: -3.1117218
+  - timestamp: 2024-07-14 22:01:20.038000+00:00
+    Salinity_psu: 34.686
+    SoundVelocity_meters_per_second: 1532.25
+    Temperature_celsius: 1.81
+    VehicleAltitude_meters: 0.61
+    VehicleDepth_meters: 4443.13
+    VehicleHeading_degrees: 285.699
+    x_meters: 0.32374132
+    y_meters: -2.47
+    z_meters: -3.2228546
+  - timestamp: 2024-07-14 22:01:30.048000+00:00
+    Salinity_psu: 34.686
+    SoundVelocity_meters_per_second: 1532.25
+    Temperature_celsius: 1.81
+    VehicleAltitude_meters: 0.72
+    VehicleDepth_meters: 4443
+    VehicleHeading_degrees: 294.626
+    x_meters: 0.21582754
+    y_meters: -2.34
+    z_meters: -3.6673863
+  - timestamp: 2024-07-14 22:01:40.139000+00:00
+    Salinity_psu: 34.687
+    SoundVelocity_meters_per_second: 1532.25
+    Temperature_celsius: 1.81
+    VehicleAltitude_meters: 0.6
+    VehicleDepth_meters: 4443.11
+    VehicleHeading_degrees: 286.117
+    x_meters: 0.21582754
+    y_meters: -2.45
+    z_meters: -3.3339877
+  - timestamp: 2024-07-14 22:01:50.043000+00:00
+    Salinity_psu: 34.686
+    SoundVelocity_meters_per_second: 1532.26
+    Temperature_celsius: 1.81
+    VehicleAltitude_meters: 0.57
+    VehicleDepth_meters: 4443.13
+    VehicleHeading_degrees: 279.415
+    x_meters: 0.21582754
+    y_meters: -2.47
+    z_meters: -3.1117218
+  - timestamp: 2024-07-14 22:01:58.131000+00:00
+    Salinity_psu: 34.686
+    SoundVelocity_meters_per_second: 1532.26
+    Temperature_celsius: 1.81
+    VehicleAltitude_meters: 0.53
+    VehicleDepth_meters: 4443.17
+    VehicleHeading_degrees: 263.315
+    x_meters: 0.10791377
+    y_meters: -2.51
+    z_meters: -2.5560572
+  - timestamp: 2024-07-14 22:02:00.044000+00:00
+    Salinity_psu: 34.686
+    SoundVelocity_meters_per_second: 1532.26
+    Temperature_celsius: 1.81
+    VehicleAltitude_meters: 0.65
+    VehicleDepth_meters: 4443.09
+    VehicleHeading_degrees: 263.293
+    x_meters: 0.10791377
+    y_meters: -2.43
+    z_meters: -2.4449244
+  - timestamp: 2024-07-14 22:02:10.036000+00:00
+    Salinity_psu: 34.686
+    SoundVelocity_meters_per_second: 1532.28
+    Temperature_celsius: 1.82
+    VehicleAltitude_meters: 0.8
+    VehicleDepth_meters: 4442.92
+    VehicleHeading_degrees: 280.162
+    x_meters: 0
+    y_meters: -2.26
+    z_meters: -2.2226584
+  - timestamp: 2024-07-14 22:02:10.589000+00:00
+    Salinity_psu: 34.686
+    SoundVelocity_meters_per_second: 1532.28
+    Temperature_celsius: 1.82
+    VehicleAltitude_meters: 0.8
+    VehicleDepth_meters: 4442.91
+    VehicleHeading_degrees: 281.343
+    x_meters: 0
+    y_meters: -2.25
+    z_meters: -2.2226584
+  - timestamp: 2024-07-14 22:02:18.232000+00:00
+    Salinity_psu: 34.686
+    SoundVelocity_meters_per_second: 1532.26
+    Temperature_celsius: 1.82
+    VehicleAltitude_meters: 0.91
+    VehicleDepth_meters: 4442.78
+    VehicleHeading_degrees: 285.507
+    x_meters: -0.21582754
+    y_meters: -2.12
+    z_meters: -3.2228546
+  - timestamp: 2024-07-14 22:02:20.035000+00:00
+    Salinity_psu: 34.687
+    SoundVelocity_meters_per_second: 1532.25
+    Temperature_celsius: 1.81
+    VehicleAltitude_meters: 0.86
+    VehicleDepth_meters: 4442.78
+    VehicleHeading_degrees: 285.117
+    x_meters: -0.32374132
+    y_meters: -2.12
+    z_meters: -3.5562534
+  - timestamp: 2024-07-14 22:02:30.050000+00:00
+    Salinity_psu: 34.686
+    SoundVelocity_meters_per_second: 1532.25
+    Temperature_celsius: 1.81
+    VehicleAltitude_meters: 1.29
+    VehicleDepth_meters: 4442.33
+    VehicleHeading_degrees: 275.037
+    x_meters: -0.53956884
+    y_meters: -1.67
+    z_meters: -3.5562534
+  - timestamp: 2024-07-14 22:02:31.454000+00:00
+    Salinity_psu: 34.687
+    SoundVelocity_meters_per_second: 1532.25
+    Temperature_celsius: 1.81
+    VehicleAltitude_meters: 1.33
+    VehicleDepth_meters: 4442.26
+    VehicleHeading_degrees: 275.878
+    x_meters: -0.64748263
+    y_meters: -1.6
+    z_meters: -3.4451206
+  - timestamp: 2024-07-14 22:02:39.793000+00:00
+    Salinity_psu: 34.687
+    SoundVelocity_meters_per_second: 1532.24
+    Temperature_celsius: 1.81
+    VehicleAltitude_meters: 1.4
+    VehicleDepth_meters: 4442.15
+    VehicleHeading_degrees: 280.234
+    x_meters: -1.0791377
+    y_meters: -1.49
+    z_meters: -3.8896523
+  - timestamp: 2024-07-14 22:02:40.181000+00:00
+    Salinity_psu: 34.687
+    SoundVelocity_meters_per_second: 1532.24
+    Temperature_celsius: 1.81
+    VehicleAltitude_meters: 1.4
+    VehicleDepth_meters: 4442.15
+    VehicleHeading_degrees: 280.234
+    x_meters: -1.0791377
+    y_meters: -1.49
+    z_meters: -3.8896523
+  - timestamp: 2024-07-14 22:02:45.492000+00:00
+    Salinity_psu: 34.687
+    SoundVelocity_meters_per_second: 1532.23
+    Temperature_celsius: 1.81
+    VehicleAltitude_meters: 1.43
+    VehicleDepth_meters: 4442.09
+    VehicleHeading_degrees: 280.399
+    x_meters: -1.1870515
+    y_meters: -1.43
+    z_meters: -4.445317
+  - timestamp: 2024-07-14 22:02:50.034000+00:00
+    Salinity_psu: 34.687
+    SoundVelocity_meters_per_second: 1532.23
+    Temperature_celsius: 1.81
+    VehicleAltitude_meters: 1.49
+    VehicleDepth_meters: 4441.99
+    VehicleHeading_degrees: 279.673
+    x_meters: -1.402879
+    y_meters: -1.33
+    z_meters: -4.55645
+  - timestamp: 2024-07-14 22:02:53.602000+00:00
+    Salinity_psu: 34.687
+    SoundVelocity_meters_per_second: 1532.23
+    Temperature_celsius: 1.81
+    VehicleAltitude_meters: 1.62
+    VehicleDepth_meters: 4441.81
+    VehicleHeading_degrees: 280.519
+    x_meters: -1.7266203
+    y_meters: -1.15
+    z_meters: -4.55645
+  - timestamp: 2024-07-14 22:02:54.176000+00:00
+    Salinity_psu: 34.687
+    SoundVelocity_meters_per_second: 1532.23
+    Temperature_celsius: 1.81
+    VehicleAltitude_meters: 1.62
+    VehicleDepth_meters: 4441.81
+    VehicleHeading_degrees: 280.519
+    x_meters: -1.7266203
+    y_meters: -1.15
+    z_meters: -4.55645
+  - timestamp: 2024-07-14 22:03:00.047000+00:00
+    Salinity_psu: 34.687
+    SoundVelocity_meters_per_second: 1532.23
+    Temperature_celsius: 1.81
+    VehicleAltitude_meters: 1.6
+    VehicleDepth_meters: 4441.74
+    VehicleHeading_degrees: 279.218
+    x_meters: -2.0503616
+    y_meters: -1.08
+    z_meters: -4.445317
+  - timestamp: 2024-07-14 22:03:10.037000+00:00
+    Salinity_psu: 34.687
+    SoundVelocity_meters_per_second: 1532.23
+    Temperature_celsius: 1.81
+    VehicleAltitude_meters: 1.25
+    VehicleDepth_meters: 4442.08
+    VehicleHeading_degrees: 275.416
+    x_meters: -2.374103
+    y_meters: -1.42
+    z_meters: -4.111918
+  - timestamp: 2024-07-14 22:03:19.640000+00:00
+    Salinity_psu: 34.686
+    SoundVelocity_meters_per_second: 1532.24
+    Temperature_celsius: 1.81
+    VehicleAltitude_meters: 0.76
+    VehicleDepth_meters: 4442.49
+    VehicleHeading_degrees: 278.877
+    x_meters: -2.5899305
+    y_meters: -1.83
+    z_meters: -4.0007854
+  - timestamp: 2024-07-14 22:03:20.030000+00:00
+    Salinity_psu: 34.687
+    SoundVelocity_meters_per_second: 1532.24
+    Temperature_celsius: 1.81
+    VehicleAltitude_meters: 0.76
+    VehicleDepth_meters: 4442.49
+    VehicleHeading_degrees: 278.877
+    x_meters: -2.5899305
+    y_meters: -1.83
+    z_meters: -4.0007854
+  - timestamp: 2024-07-14 22:03:27.270000+00:00
+    Salinity_psu: 34.686
+    SoundVelocity_meters_per_second: 1532.24
+    Temperature_celsius: 1.81
+    VehicleAltitude_meters: 0.64
+    VehicleDepth_meters: 4442.59
+    VehicleHeading_degrees: 279.311
+    x_meters: -2.805758
+    y_meters: -1.93
+    z_meters: -4.111918
+  - timestamp: 2024-07-14 22:03:30.030000+00:00
+    Salinity_psu: 34.686
+    SoundVelocity_meters_per_second: 1532.24
+    Temperature_celsius: 1.81
+    VehicleAltitude_meters: 0.65
+    VehicleDepth_meters: 4442.58
+    VehicleHeading_degrees: 278.421
+    x_meters: -2.805758
+    y_meters: -1.92
+    z_meters: -4.111918
+  - timestamp: 2024-07-14 22:03:40.035000+00:00
+    Salinity_psu: 34.687
+    SoundVelocity_meters_per_second: 1532.24
+    Temperature_celsius: 1.81
+    VehicleAltitude_meters: 1.01
+    VehicleDepth_meters: 4442.19
+    VehicleHeading_degrees: 277.916
+    x_meters: -3.0215857
+    y_meters: -1.53
+    z_meters: -4.0007854
+  - timestamp: 2024-07-14 22:03:42.683000+00:00
+    Salinity_psu: 34.687
+    SoundVelocity_meters_per_second: 1532.23
+    Temperature_celsius: 1.81
+    VehicleAltitude_meters: 1.1
+    VehicleDepth_meters: 4442.09
+    VehicleHeading_degrees: 280.272
+    x_meters: -3.2374132
+    y_meters: -1.43
+    z_meters: -4.111918
+  - timestamp: 2024-07-14 22:03:50.034000+00:00
+    Salinity_psu: 34.687
+    SoundVelocity_meters_per_second: 1532.23
+    Temperature_celsius: 1.82
+    VehicleAltitude_meters: 1.54
+    VehicleDepth_meters: 4441.6
+    VehicleHeading_degrees: 281.635
+    x_meters: -3.6690683
+    y_meters: -0.94
+    z_meters: -4.223051
+  - timestamp: 2024-07-14 22:03:51.379000+00:00
+    Salinity_psu: 34.686
+    SoundVelocity_meters_per_second: 1532.23
+    Temperature_celsius: 1.82
+    VehicleAltitude_meters: 1.6
+    VehicleDepth_meters: 4441.55
+    VehicleHeading_degrees: 281.316
+    x_meters: -3.6690683
+    y_meters: -0.89
+    z_meters: -4.223051
+  - timestamp: 2024-07-14 22:03:55.742000+00:00
+    Salinity_psu: 34.687
+    SoundVelocity_meters_per_second: 1532.23
+    Temperature_celsius: 1.81
+    VehicleAltitude_meters: 1.93
+    VehicleDepth_meters: 4441.18
+    VehicleHeading_degrees: 281.305
+    x_meters: -4.1007233
+    y_meters: -0.52
+    z_meters: -4.111918
+  - timestamp: 2024-07-14 22:03:57.927000+00:00
+    Salinity_psu: 34.686
+    SoundVelocity_meters_per_second: 1532.22
+    Temperature_celsius: 1.81
+    VehicleAltitude_meters: 1.98
+    VehicleDepth_meters: 4441.06
+    VehicleHeading_degrees: 281.382
+    x_meters: -4.3165507
+    y_meters: -0.4
+    z_meters: -4.0007854
+  - timestamp: 2024-07-14 22:04:00.062000+00:00
+    Salinity_psu: 34.687
+    SoundVelocity_meters_per_second: 1532.22
+    Temperature_celsius: 1.81
+    VehicleAltitude_meters: 1.93
+    VehicleDepth_meters: 4441
+    VehicleHeading_degrees: 281.168
+    x_meters: -4.3165507
+    y_meters: -0.34
+    z_meters: -4.0007854
+  - timestamp: 2024-07-14 22:04:10.032000+00:00
+    Salinity_psu: 34.687
+    SoundVelocity_meters_per_second: 1532.23
+    Temperature_celsius: 1.81
+    VehicleAltitude_meters: 1.55
+    VehicleDepth_meters: 4441.4
+    VehicleHeading_degrees: 277.427
+    x_meters: -4.640292
+    y_meters: -0.74
+    z_meters: -3.6673863
+  - timestamp: 2024-07-14 22:04:20.025000+00:00
+    Salinity_psu: 34.686
+    SoundVelocity_meters_per_second: 1532.23
+    Temperature_celsius: 1.81
+    VehicleAltitude_meters: 1.16
+    VehicleDepth_meters: 4441.71
+    VehicleHeading_degrees: 280.613
+    x_meters: -5.071947
+    y_meters: -1.05
+    z_meters: -3.7785194
+  - timestamp: 2024-07-14 22:04:30.037000+00:00
+    Salinity_psu: 34.687
+    SoundVelocity_meters_per_second: 1532.23
+    Temperature_celsius: 1.81
+    VehicleAltitude_meters: 0.99
+    VehicleDepth_meters: 4441.82
+    VehicleHeading_degrees: 278.696
+    x_meters: -5.3956885
+    y_meters: -1.16
+    z_meters: -3.6673863
+  - timestamp: 2024-07-14 22:04:32.114000+00:00
+    Salinity_psu: 34.686
+    SoundVelocity_meters_per_second: 1532.23
+    Temperature_celsius: 1.81
+    VehicleAltitude_meters: 0.95
+    VehicleDepth_meters: 4441.85
+    VehicleHeading_degrees: 277.883
+    x_meters: -5.3956885
+    y_meters: -1.19
+    z_meters: -3.5562534
+  - timestamp: 2024-07-14 22:04:40.030000+00:00
+    Salinity_psu: 34.687
+    SoundVelocity_meters_per_second: 1532.23
+    Temperature_celsius: 1.81
+    VehicleAltitude_meters: 0.74
+    VehicleDepth_meters: 4442.02
+    VehicleHeading_degrees: 276.839
+    x_meters: -5.71943
+    y_meters: -1.36
+    z_meters: -3.6673863
+  - timestamp: 2024-07-14 22:04:46.341000+00:00
+    Salinity_psu: 34.686
+    SoundVelocity_meters_per_second: 1532.23
+    Temperature_celsius: 1.81
+    VehicleAltitude_meters: 0.66
+    VehicleDepth_meters: 4442.1
+    VehicleHeading_degrees: 275.801
+    x_meters: -5.8273435
+    y_meters: -1.44
+    z_meters: -3.5562534
+  - timestamp: 2024-07-14 22:04:50.048000+00:00
+    Salinity_psu: 34.687
+    SoundVelocity_meters_per_second: 1532.23
+    Temperature_celsius: 1.81
+    VehicleAltitude_meters: 0.63
+    VehicleDepth_meters: 4442.12
+    VehicleHeading_degrees: 273.906
+    x_meters: -5.8273435
+    y_meters: -1.46
+    z_meters: -3.4451206
+  - timestamp: 2024-07-14 22:04:59.526000+00:00
+    Salinity_psu: 34.687
+    SoundVelocity_meters_per_second: 1532.26
+    Temperature_celsius: 1.82
+    VehicleAltitude_meters: 0.61
+    VehicleDepth_meters: 4442.14
+    VehicleHeading_degrees: 272.016
+    x_meters: -5.9352574
+    y_meters: -1.48
+    z_meters: -3.3339877
+  - timestamp: 2024-07-14 22:05:00.135000+00:00
+    Salinity_psu: 34.686
+    SoundVelocity_meters_per_second: 1532.27
+    Temperature_celsius: 1.82
+    VehicleAltitude_meters: 0.61
+    VehicleDepth_meters: 4442.14
+    VehicleHeading_degrees: 272.06
+    x_meters: -5.9352574
+    y_meters: -1.48
+    z_meters: -3.3339877
+  - timestamp: 2024-07-14 22:05:10.034000+00:00
+    Salinity_psu: 34.686
+    SoundVelocity_meters_per_second: 1532.34
+    Temperature_celsius: 1.84
+    VehicleAltitude_meters: 0.59
+    VehicleDepth_meters: 4442.15
+    VehicleHeading_degrees: 272.791
+    x_meters: -5.9352574
+    y_meters: -1.49
+    z_meters: -3.2228546
+  - timestamp: 2024-07-14 22:05:14.018000+00:00
+    Salinity_psu: 34.686
+    SoundVelocity_meters_per_second: 1532.33
+    Temperature_celsius: 1.84
+    VehicleAltitude_meters: 0.61
+    VehicleDepth_meters: 4442.15
+    VehicleHeading_degrees: 272.922
+    x_meters: -6.0431714
+    y_meters: -1.49
+    z_meters: -3.1117218
+  - timestamp: 2024-07-14 22:05:20.031000+00:00
+    Salinity_psu: 34.687
+    SoundVelocity_meters_per_second: 1532.35
+    Temperature_celsius: 1.84
+    VehicleAltitude_meters: 0.59
+    VehicleDepth_meters: 4442.15
+    VehicleHeading_degrees: 273.005
+    x_meters: -6.0431714
+    y_meters: -1.49
+    z_meters: -3.2228546
+  - timestamp: 2024-07-14 22:05:30.029000+00:00
+    Salinity_psu: 34.687
+    SoundVelocity_meters_per_second: 1532.35
+    Temperature_celsius: 1.84
+    VehicleAltitude_meters: 0.6
+    VehicleDepth_meters: 4442.15
+    VehicleHeading_degrees: 273.153
+    x_meters: -6.0431714
+    y_meters: -1.49
+    z_meters: -3.2228546
+  - timestamp: 2024-07-14 22:05:40.035000+00:00
+    Salinity_psu: 34.687
+    SoundVelocity_meters_per_second: 1532.36
+    Temperature_celsius: 1.84
+    VehicleAltitude_meters: 0.61
+    VehicleDepth_meters: 4442.15
+    VehicleHeading_degrees: 273.73
+    x_meters: -6.0431714
+    y_meters: -1.49
+    z_meters: -3.2228546
+  - timestamp: 2024-07-14 22:05:50.039000+00:00
+    Salinity_psu: 34.687
+    SoundVelocity_meters_per_second: 1532.35
+    Temperature_celsius: 1.84
+    VehicleAltitude_meters: 0.6
+    VehicleDepth_meters: 4442.15
+    VehicleHeading_degrees: 274.059
+    x_meters: -5.9352574
+    y_meters: -1.49
+    z_meters: -3.3339877
+  - timestamp: 2024-07-14 22:05:51.138000+00:00
+    Salinity_psu: 34.687
+    SoundVelocity_meters_per_second: 1532.33
+    Temperature_celsius: 1.84
+    VehicleAltitude_meters: 0.6
+    VehicleDepth_meters: 4442.15
+    VehicleHeading_degrees: 274.092
+    x_meters: -5.9352574
+    y_meters: -1.49
+    z_meters: -3.3339877
+  - timestamp: 2024-07-14 22:06:00.051000+00:00
+    Salinity_psu: 34.686
+    SoundVelocity_meters_per_second: 1532.37
+    Temperature_celsius: 1.84
+    VehicleAltitude_meters: 0.6
+    VehicleDepth_meters: 4442.15
+    VehicleHeading_degrees: 274.092
+    x_meters: -5.9352574
+    y_meters: -1.49
+    z_meters: -3.3339877
+  - timestamp: 2024-07-14 22:06:10.036000+00:00
+    Salinity_psu: 34.687
+    SoundVelocity_meters_per_second: 1532.33
+    Temperature_celsius: 1.84
+    VehicleAltitude_meters: 0.59
+    VehicleDepth_meters: 4442.15
+    VehicleHeading_degrees: 274.471
+    x_meters: -5.9352574
+    y_meters: -1.49
+    z_meters: -3.3339877
+  - timestamp: 2024-07-14 22:06:20.064000+00:00
+    Salinity_psu: 34.687
+    SoundVelocity_meters_per_second: 1532.36
+    Temperature_celsius: 1.84
+    VehicleAltitude_meters: 0.6
+    VehicleDepth_meters: 4442.16
+    VehicleHeading_degrees: 274.329
+    x_meters: -6.0431714
+    y_meters: -1.5
+    z_meters: -3.4451206
+  - timestamp: 2024-07-14 22:06:30.026000+00:00
+    Salinity_psu: 34.686
+    SoundVelocity_meters_per_second: 1532.35
+    Temperature_celsius: 1.84
+    VehicleAltitude_meters: 0.6
+    VehicleDepth_meters: 4442.14
+    VehicleHeading_degrees: 274.554
+    x_meters: -6.0431714
+    y_meters: -1.48
+    z_meters: -3.4451206
+  - timestamp: 2024-07-14 22:06:40.039000+00:00
+    Salinity_psu: 34.687
+    SoundVelocity_meters_per_second: 1532.35
+    Temperature_celsius: 1.84
+    VehicleAltitude_meters: 0.6
+    VehicleDepth_meters: 4442.14
+    VehicleHeading_degrees: 274.554
+    x_meters: -6.151085
+    y_meters: -1.48
+    z_meters: -3.4451206
+  - timestamp: 2024-07-14 22:06:50.042000+00:00
+    Salinity_psu: 34.686
+    SoundVelocity_meters_per_second: 1532.35
+    Temperature_celsius: 1.84
+    VehicleAltitude_meters: 0.58
+    VehicleDepth_meters: 4442.16
+    VehicleHeading_degrees: 274.142
+    x_meters: -6.258999
+    y_meters: -1.5
+    z_meters: -3.3339877
+  - timestamp: 2024-07-14 22:07:00.076000+00:00
+    Salinity_psu: 34.687
+    SoundVelocity_meters_per_second: 1532.34
+    Temperature_celsius: 1.84
+    VehicleAltitude_meters: 0.61
+    VehicleDepth_meters: 4442.14
+    VehicleHeading_degrees: 273.669
+    x_meters: -6.258999
+    y_meters: -1.48
+    z_meters: -3.3339877
+  - timestamp: 2024-07-14 22:07:10.045000+00:00
+    Salinity_psu: 34.687
+    SoundVelocity_meters_per_second: 1532.35
+    Temperature_celsius: 1.84
+    VehicleAltitude_meters: 0.62
+    VehicleDepth_meters: 4442.14
+    VehicleHeading_degrees: 273.653
+    x_meters: -6.151085
+    y_meters: -1.48
+    z_meters: -3.4451206
+  - timestamp: 2024-07-14 22:07:20.033000+00:00
+    Salinity_psu: 34.687
+    SoundVelocity_meters_per_second: 1532.34
+    Temperature_celsius: 1.84
+    VehicleAltitude_meters: 0.59
+    VehicleDepth_meters: 4442.15
+    VehicleHeading_degrees: 273.505
+    x_meters: -6.151085
+    y_meters: -1.49
+    z_meters: -3.4451206
+  - timestamp: 2024-07-14 22:07:30.042000+00:00
+    Salinity_psu: 34.687
+    SoundVelocity_meters_per_second: 1532.34
+    Temperature_celsius: 1.84
+    VehicleAltitude_meters: 0.6
+    VehicleDepth_meters: 4442.14
+    VehicleHeading_degrees: 273.268
+    x_meters: -6.151085
+    y_meters: -1.48
+    z_meters: -3.5562534
+  - timestamp: 2024-07-14 22:07:40.035000+00:00
+    Salinity_psu: 34.686
+    SoundVelocity_meters_per_second: 1532.35
+    Temperature_celsius: 1.84
+    VehicleAltitude_meters: 0.61
+    VehicleDepth_meters: 4442.14
+    VehicleHeading_degrees: 273.384
+    x_meters: -6.258999
+    y_meters: -1.48
+    z_meters: -3.5562534
+  - timestamp: 2024-07-14 22:07:50.258000+00:00
+    Salinity_psu: 34.686
+    SoundVelocity_meters_per_second: 1532.33
+    Temperature_celsius: 1.84
+    VehicleAltitude_meters: 0.59
+    VehicleDepth_meters: 4442.15
+    VehicleHeading_degrees: 273.406
+    x_meters: -6.258999
+    y_meters: -1.49
+    z_meters: -3.5562534
+  - timestamp: 2024-07-14 22:08:00.031000+00:00
+    Salinity_psu: 34.686
+    SoundVelocity_meters_per_second: 1532.32
+    Temperature_celsius: 1.83
+    VehicleAltitude_meters: 0.6
+    VehicleDepth_meters: 4442.15
+    VehicleHeading_degrees: 273.735
+    x_meters: -6.151085
+    y_meters: -1.49
+    z_meters: -3.7785194
+  - timestamp: 2024-07-14 22:08:10.044000+00:00
+    Salinity_psu: 34.686
+    SoundVelocity_meters_per_second: 1532.33
+    Temperature_celsius: 1.84
+    VehicleAltitude_meters: 0.62
+    VehicleDepth_meters: 4442.14
+    VehicleHeading_degrees: 273.911
+    x_meters: -6.258999
+    y_meters: -1.48
+    z_meters: -3.6673863
+  - timestamp: 2024-07-14 22:08:20.081000+00:00
+    Salinity_psu: 34.686
+    SoundVelocity_meters_per_second: 1532.35
+    Temperature_celsius: 1.84
+    VehicleAltitude_meters: 0.61
+    VehicleDepth_meters: 4442.15
+    VehicleHeading_degrees: 273.917
+    x_meters: -6.258999
+    y_meters: -1.49
+    z_meters: -3.5562534
+  - timestamp: 2024-07-14 22:08:30.103000+00:00
+    Salinity_psu: 34.687
+    SoundVelocity_meters_per_second: 1532.34
+    Temperature_celsius: 1.84
+    VehicleAltitude_meters: 0.59
+    VehicleDepth_meters: 4442.15
+    VehicleHeading_degrees: 273.884
+    x_meters: -6.4748263
+    y_meters: -1.49
+    z_meters: -3.7785194
+  - timestamp: 2024-07-14 22:08:40.098000+00:00
+    Salinity_psu: 34.687
+    SoundVelocity_meters_per_second: 1532.35
+    Temperature_celsius: 1.84
+    VehicleAltitude_meters: 0.6
+    VehicleDepth_meters: 4442.15
+    VehicleHeading_degrees: 274.026
+    x_meters: -6.5827403
+    y_meters: -1.49
+    z_meters: -3.8896523
+  - timestamp: 2024-07-14 22:08:50.072000+00:00
+    Salinity_psu: 34.688
+    SoundVelocity_meters_per_second: 1532.34
+    Temperature_celsius: 1.84
+    VehicleAltitude_meters: 0.6
+    VehicleDepth_meters: 4442.15
+    VehicleHeading_degrees: 273.889
+    x_meters: -6.4748263
+    y_meters: -1.49
+    z_meters: -4.0007854
+  - timestamp: 2024-07-14 22:09:00.064000+00:00
+    Salinity_psu: 34.688
+    SoundVelocity_meters_per_second: 1532.37
+    Temperature_celsius: 1.84
+    VehicleAltitude_meters: 0.6
+    VehicleDepth_meters: 4442.15
+    VehicleHeading_degrees: 273.818
+    x_meters: -6.5827403
+    y_meters: -1.49
+    z_meters: -4.0007854
+  - timestamp: 2024-07-14 22:09:10.208000+00:00
+    Salinity_psu: 34.686
+    SoundVelocity_meters_per_second: 1532.37
+    Temperature_celsius: 1.84
+    VehicleAltitude_meters: 0.6
+    VehicleDepth_meters: 4442.15
+    VehicleHeading_degrees: 273.9
+    x_meters: -6.690654
+    y_meters: -1.49
+    z_meters: -4.111918
+  - timestamp: 2024-07-14 22:09:20.037000+00:00
+    Salinity_psu: 34.686
+    SoundVelocity_meters_per_second: 1532.36
+    Temperature_celsius: 1.84
+    VehicleAltitude_meters: 0.68
+    VehicleDepth_meters: 4442.08
+    VehicleHeading_degrees: 273.625
+    x_meters: -6.690654
+    y_meters: -1.42
+    z_meters: -4.111918
+  - timestamp: 2024-07-14 22:09:30.043000+00:00
+    Salinity_psu: 34.686
+    SoundVelocity_meters_per_second: 1532.27
+    Temperature_celsius: 1.82
+    VehicleAltitude_meters: 0.81
+    VehicleDepth_meters: 4441.93
+    VehicleHeading_degrees: 276.839
+    x_meters: -6.798568
+    y_meters: -1.27
+    z_meters: -3.8896523
+  - timestamp: 2024-07-14 22:09:40.032000+00:00
+    Salinity_psu: 34.686
+    SoundVelocity_meters_per_second: 1532.33
+    Temperature_celsius: 1.84
+    VehicleAltitude_meters: 1.11
+    VehicleDepth_meters: 4441.64
+    VehicleHeading_degrees: 278.679
+    x_meters: -6.798568
+    y_meters: -0.98
+    z_meters: -3.5562534
+  - timestamp: 2024-07-14 22:09:50.065000+00:00
+    Salinity_psu: 34.687
+    SoundVelocity_meters_per_second: 1532.29
+    Temperature_celsius: 1.83
+    VehicleAltitude_meters: 1.52
+    VehicleDepth_meters: 4441.23
+    VehicleHeading_degrees: 275.795
+    x_meters: -7.014395
+    y_meters: -0.57
+    z_meters: -3.000589
+  - timestamp: 2024-07-14 22:09:58.466000+00:00
+    Salinity_psu: 34.687
+    SoundVelocity_meters_per_second: 1532.25
+    Temperature_celsius: 1.82
+    VehicleAltitude_meters: 1.69
+    VehicleDepth_meters: 4441
+    VehicleHeading_degrees: 281.074
+    x_meters: -7.3381367
+    y_meters: -0.34
+    z_meters: -2.5560572
+  - timestamp: 2024-07-14 22:09:59.525000+00:00
+    Salinity_psu: 34.687
+    SoundVelocity_meters_per_second: 1532.24
+    Temperature_celsius: 1.82
+    VehicleAltitude_meters: 1.66
+    VehicleDepth_meters: 4440.99
+    VehicleHeading_degrees: 280.789
+    x_meters: -7.44605
+    y_meters: -0.33
+    z_meters: -2.4449244
+  markerMaterial: {fileID: 7390553463975553142, guid: 7ab6f3b0fd1a6ba41b2a47766c16613f,
+    type: 3}
+  lineMaterial: {fileID: 2100000, guid: 83eabfe673263a445972586e5d8b56ee, type: 2}
+  seafloorObject: {fileID: 0}
+  scaleFactor: 0.1
+  relativePosition: {x: 0, y: 0.37, z: 0}
+--- !u!4 &1281826890
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1281826888}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.0521725, y: 0.32585096, z: 0.17985748}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1003828056}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1323550131
 GameObject:
   m_ObjectHideFlags: 0
@@ -1982,9 +2825,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2024406626}
   - component: {fileID: 2024406625}
-  - component: {fileID: 2024406627}
-  - component: {fileID: 2024406629}
-  - component: {fileID: 2024406628}
   m_Layer: 0
   m_Name: SeaFloor
   m_TagString: Untagged
@@ -2022,71 +2862,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2024406627
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2024406624}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 75a55d9097f3748e7b432ebed626c499, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  planeManager: {fileID: 151853166}
-  oceanFloorMaterial: {fileID: 2100000, guid: e5c8ac6092e78214fb866cab5f020f2a, type: 2}
-  meshHeightVariation: 0.1
---- !u!23 &2024406628
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2024406624}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &2024406629
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2024406624}
-  m_Mesh: {fileID: 0}
 --- !u!1001 &2043789470
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2118,12 +2893,12 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 17f7122f76930400ebf140456feb1b1b,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.65
+      value: 0.15
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 17f7122f76930400ebf140456feb1b1b,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -0.45
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 17f7122f76930400ebf140456feb1b1b,
         type: 3}
@@ -2169,6 +2944,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: octoskel
+      objectReference: {fileID: 0}
+    - target: {fileID: 7036213049465896255, guid: 17f7122f76930400ebf140456feb1b1b,
+        type: 3}
+      propertyPath: m_TagString
+      value: Head
       objectReference: {fileID: 0}
     - target: {fileID: 8245584089980700250, guid: 17f7122f76930400ebf140456feb1b1b,
         type: 3}
@@ -2405,6 +3185,4 @@ SceneRoots:
   - {fileID: 331264285}
   - {fileID: 2024406626}
   - {fileID: 323975177}
-  - {fileID: 167694551}
-  - {fileID: 435220608}
   - {fileID: 2043789470}
