@@ -73,7 +73,7 @@ public class OctopusAnimatorController : MonoBehaviour
                 // Debugging statements
                 // Debug.Log("Octopus Position: " + octopusPosition);
                 // Debug.Log("Ship Position: " + shipPosition);
-                Debug.Log("Distance: " + distance);
+                // Debug.Log("Distance: " + distance);
 
                 if (distance <= detectionRadius)
                 {

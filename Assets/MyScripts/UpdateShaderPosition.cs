@@ -22,7 +22,7 @@ public class UpdateShaderPosition : MonoBehaviour
             // Update the shader's _FalloffFactor (rolloff control)
             oceanFloorRenderer.material.SetFloat("_FalloffFactor", rolloff);
 
-            Debug.Log($"Updating Shader: Position = {shipTransform.position}, Radius = {radius}, Rolloff = {rolloff}");
+            // Debug.Log($"Updating Shader: Position = {shipTransform.position}, Radius = {radius}, Rolloff = {rolloff}");
         }
         else
         {
