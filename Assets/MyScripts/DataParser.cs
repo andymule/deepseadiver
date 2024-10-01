@@ -121,100 +121,64 @@ public class DataParser : MonoBehaviour
         }
     }
 
-public void PlotData()
-{
-    if (dataPoints == null || dataPoints.Count == 0)
+    public void PlotData()
     {
-        Debug.LogError("No data to plot.");
-        return;
+        if (dataPoints == null || dataPoints.Count == 0)
+        {
+            Debug.LogError("No data to plot.");
+            return;
+        }
+
+        if (visualizationParent != null)
+        {
+            Destroy(visualizationParent);
+        }
+
+        visualizationParent = new GameObject("VisualizationParent");
+        visualizationParent.transform.parent = seafloorObject.transform;
+        visualizationParent.transform.localPosition = Vector3.zero;
+
+        // Set the layer for the visualizationParent
+        visualizationParent.layer = LayerMask.NameToLayer("RoverPath");
+
+        Vector3[] positions = new Vector3[dataPoints.Count + 1];
+        Vector3 shipPosition = GameObject.FindWithTag("Ship").transform.position;
+        positions[0] = shipPosition;
+
+        for (int i = 1; i < positions.Length; i++)
+        {
+            VehicleDataPoint point = dataPoints[i - 1];
+            Vector3 position = new Vector3(point.x_meters, point.y_meters, point.z_meters);
+            position *= scaleFactor;
+            position += relativePosition;
+            positions[i] = position;
+        }
+
+        GameObject pathLineObj = new GameObject("PathLine");
+        LineRenderer pathLine = pathLineObj.AddComponent<LineRenderer>();
+        pathLine.positionCount = positions.Length;
+        pathLine.SetPositions(positions);
+        pathLine.startWidth = 0.04f * scaleFactor;
+        pathLine.endWidth = 0.04f * scaleFactor;
+
+        // Set the line material and color with opacity
+        if (lineMaterial != null)
+        {
+            pathLine.material = lineMaterial;
+        }
+        else
+        {
+            pathLine.material = new Material(Shader.Find("Universal Render Pipeline/Unlit"));
+        }
+        // Color lineColor = new Color(0.5f, 0.5f, 0.5f, 0.3f); 
+        // pathLine.material.color = lineColor;
+
+        // Set the layer for the pathLineObj
+        pathLineObj.layer = LayerMask.NameToLayer("RoverPath");
+        pathLineObj.transform.parent = visualizationParent.transform;
+
+        // Provide positions to ShipController
+        ShipController shipController = GameObject.FindWithTag("Ship").GetComponent<ShipController>();
+        shipController.SetPathPositions(positions);
     }
-
-    if (visualizationParent != null)
-    {
-        Destroy(visualizationParent);
-    }
-
-    visualizationParent = new GameObject("VisualizationParent");
-    visualizationParent.layer = LayerMask.NameToLayer("RoverPath");
-    visualizationParent.transform.parent = seafloorObject.transform;
-    visualizationParent.transform.localPosition = Vector3.zero;
-
-    Vector3[] positions = new Vector3[dataPoints.Count + 1];
-    Vector3 shipPosition = GameObject.FindWithTag("Ship").transform.position;
-    positions[0] = shipPosition;
-
-    for (int i = 1; i < positions.Length; i++)
-    {
-        VehicleDataPoint point = dataPoints[i - 1];
-        Vector3 position = new Vector3(point.x_meters, point.y_meters, point.z_meters);
-        position *= scaleFactor;
-        position += relativePosition;
-        positions[i] = position;
-    }
-
-    GameObject pathLineObj = new GameObject("PathLine");
-    LineRenderer pathLine = pathLineObj.AddComponent<LineRenderer>();
-    pathLine.renderingLayerMask = (uint)LayerMask.GetMask("RoverPath");
-    pathLine.positionCount = positions.Length;
-    pathLine.SetPositions(positions);
-    pathLine.startWidth = 0.04f * scaleFactor;
-    pathLine.endWidth = 0.04f * scaleFactor;
-    pathLine.material = lineMaterial ?? new Material(Shader.Find("Sprites/Default"));
-    pathLine.material.color = Color.cyan;
-    pathLineObj.transform.parent = visualizationParent.transform;
-    pathLineObj.layer = LayerMask.NameToLayer("RoverPath");
-
-    // Create colliders along the line segments
-    for (int i = 0; i < positions.Length - 1; i++)
-    {
-        Vector3 start = positions[i];
-        Vector3 end = positions[i + 1];
-        CreateCapsuleColliderBetweenPoints(start, end, pathLineObj.transform);
-    }
-
-    // Set up path points for ShipController
-    Transform[] pathPoints = new Transform[positions.Length];
-    for (int i = 0; i < positions.Length; i++)
-    {
-        GameObject pointObj = new GameObject("PathPoint_" + i);
-        pointObj.transform.position = positions[i];
-        pointObj.transform.parent = visualizationParent.transform;
-        pathPoints[i] = pointObj.transform;
-    }
-
-    ShipController shipController = GameObject.FindWithTag("Ship").GetComponent<ShipController>();
-    shipController.pathPoints = pathPoints;
-}
-
-    
-    void CreateCapsuleColliderBetweenPoints(Vector3 start, Vector3 end, Transform parent)
-    {
-        GameObject colliderObj = new GameObject("Collider_" + start.ToString());
-
-        // Assign the new layer to the collider object
-        colliderObj.layer = LayerMask.NameToLayer("LineCollider");
-
-        // Set the parent with worldPositionStays = false to maintain local transforms
-        colliderObj.transform.SetParent(parent, false);
-
-        // Convert world positions to local positions relative to the parent
-        Vector3 localStart = parent.InverseTransformPoint(start);
-        Vector3 localEnd = parent.InverseTransformPoint(end);
-
-        // Position the collider at the midpoint between localStart and localEnd
-        colliderObj.transform.localPosition = (localStart + localEnd) / 2f;
-
-        // Orient the collider along the line segment
-        Vector3 direction = localEnd - localStart;
-        colliderObj.transform.localRotation = Quaternion.FromToRotation(Vector3.up, direction.normalized);
-
-        // Add CapsuleCollider component
-        CapsuleCollider capsule = colliderObj.AddComponent<CapsuleCollider>();
-        capsule.radius = 0.02f * scaleFactor; // Adjust as needed
-        capsule.height = direction.magnitude;
-        capsule.direction = 1; // Align along Y-axis
-
-        capsule.isTrigger = false; // Set to false for collision detection
-    }
-
 }

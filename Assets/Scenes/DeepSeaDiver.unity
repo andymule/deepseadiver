@@ -989,9 +989,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0.05
-  pathPoints: []
-  currentWaypointIndex: 0
-  targetWaypointIndex: 0
   rotationOffsetEuler: {x: 90, y: 90, z: 90}
 --- !u!1001 &331264285
 PrefabInstance:
@@ -3536,9 +3533,8 @@ MonoBehaviour:
     x_meters: -7.44605
     y_meters: -0.33
     z_meters: -2.4449244
-  markerMaterial: {fileID: 7390553463975553142, guid: 7ab6f3b0fd1a6ba41b2a47766c16613f,
-    type: 3}
-  lineMaterial: {fileID: 2100000, guid: 83eabfe673263a445972586e5d8b56ee, type: 2}
+  markerMaterial: {fileID: 2100000, guid: 04a96e839c3918a4ba7b4bc8aae02624, type: 2}
+  lineMaterial: {fileID: 2100000, guid: 04a96e839c3918a4ba7b4bc8aae02624, type: 2}
   seafloorObject: {fileID: 0}
   scaleFactor: 0.1
   relativePosition: {x: 0, y: 0.37, z: 0}
