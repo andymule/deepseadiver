@@ -81,13 +81,13 @@ fig.add_trace(
     )
 )
 
-# Adding a brown line to represent VehicleAltitude_meters
+# Adding a brown line to represent VehicleAltitude_meters extending upward
 for i in range(len(latitude_meters)):
     fig.add_trace(
         go.Scatter3d(
             x=[latitude_meters.iloc[i], latitude_meters.iloc[i]],
             y=[longitude_meters.iloc[i], longitude_meters.iloc[i]],
-            z=[depths.iloc[i], depths.iloc[i] - altitudes.iloc[i]],
+            z=[depths.iloc[i], depths.iloc[i] + altitudes.iloc[i]],  # Add altitude to depth for upward extension
             mode="lines",
             line=dict(color="brown", width=2),
             showlegend=False,  # Avoid duplicate legend entries
@@ -95,7 +95,7 @@ for i in range(len(latitude_meters)):
         )
     )
 
-# Adjust axis ranges based on the zoom factor
+# Adjust axis ranges based on the zoom factor and flip depth axis
 fig.update_layout(
     title="3D Vehicle Path with Time Progression and Altitude (Meters from Start)",
     scene=dict(
@@ -114,7 +114,10 @@ fig.update_layout(
                 longitude_meters.max() + 5,
             ]
         ),
-        zaxis=dict(range=[depths.min() - 10, depths.max() + 10]),
+        zaxis=dict(
+            range=[depths.max() + 10, depths.min() - 10],  # Flip depth axis
+            autorange="reversed"  # Ensure axis is reversed to show correct orientation
+        ),
     ),
 )
 
